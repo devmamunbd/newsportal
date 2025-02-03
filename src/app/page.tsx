@@ -1,12 +1,17 @@
 import Banner from "@/components/shared/Banner";
-import Image from "next/image";
+import LatestNews from "@/components/shared/LatestNews";
 
 export default function Home() {
   return (
    <>
-   <section className="py-12">
+   <div className="py-12">
     <Banner></Banner>
-   </section>
+
+    <div className="py-12">
+    <LatestNews></LatestNews>
+    </div>
+
+   </div>
 
    </>
   );

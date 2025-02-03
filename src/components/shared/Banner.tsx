@@ -21,7 +21,7 @@ const Banner = () => {
         Some of Bangladesh's legendary cricketers include Shakib Al Hasan, Mashrafe Mortaza, Tamim Iqbal, Mushfiqur Rahim, and Mahmudullah Riyad. The team plays its home matches at the Sher-e-Bangla National Stadium in Dhaka. Known for passionate cricket fans, Bangladesh continues to grow as a formidable force in world cricket.
 
         </p>
-             <Button variant="default">More....</Button>
+             <Button variant="default">Read More....</Button>
         </div>
       </div>
     </>
