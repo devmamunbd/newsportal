@@ -1,14 +1,17 @@
 "use client"
+
 import Link from 'next/link'
 import React from 'react'
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
 import { Switch } from "@/components/ui/switch"
 import { Button } from "@/components/ui/button"
-import { IoMdMenu } from "react-icons/io";
+// import { IoMdMenu, IoMdClose  } from "react-icons/io";
 import {usePathname} from "next/navigation"
+import MobileMenu from './MobileMenu'
 
 const Navbar = () => {
     const pathname = usePathname();
+
   return (
     <header className='py-4 shadow-md'>
         <nav className='max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8'>
@@ -61,11 +64,7 @@ const Navbar = () => {
     </div>
 
     {/* Mobile Menu */}
-        <div className="block lg:hidden">
-            <Button>
-                <IoMdMenu className=" w-12 h-12"/>
-            </Button>
-        </div>
+       <MobileMenu/>
         </nav>
     </header>
   )
