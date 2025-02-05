@@ -1,8 +1,12 @@
+import AllNews from '@/components/AllNews/AllNews'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='py-12'>
+        <h2 className="text-xl md:text-2xl font-bold text-black">All News</h2>
+        <AllNews></AllNews>
+    </div>
   )
 }
 
