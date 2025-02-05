@@ -4,7 +4,12 @@ import team from '@/public/assets/BDTeam.jpeg'
 import Link from 'next/link'
 
 
-const LatestNews =()=> {
+const LatestNews = async ()=> {
+    const data = await fetch('https://news-api-next-js-one.vercel.app/api/news')
+    const news = await data.json();
+    console.log("news", news)
+
+
     return (
         <div>
             <h2 className="text-xl md:text-2xl text-black font-bold mb-3">Latest News</h2>
