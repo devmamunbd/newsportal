@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Button } from "../ui/button";
-import team from '@/public/assets/BDTeam.jpeg'
 import Link from 'next/link'
 import { NewsItem } from "@/types/news";
 
