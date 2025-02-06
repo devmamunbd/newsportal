@@ -15,9 +15,9 @@ export async function generateStaticParams() {
   }
 
 
-interface NewsDetailsPageProps {
-    params: { id: string };
-}
+// interface NewsDetailsPageProps {
+//     params: { id: string };
+// }
 
 interface News {
     _id: string;
@@ -30,7 +30,7 @@ interface News {
     description: string;
 }
 
-const NewsDetailsPage = async ({ params }: NewsDetailsPageProps) => {
+const NewsDetailsPage = async ({ }: { params: { id: string } }) => {
     const news: News = await fetch(`https://news-api-next-js-one.vercel.app/api/news/${params.id}`).then((res) => res.json());
     // if (!news) {
     //     return <p>News In Not Found</p>;
