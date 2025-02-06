@@ -29,7 +29,7 @@ interface News {
     description: string;
 }
 
-const NewsDetailsPage = async ({ params }: { params: { id: string } }) => {
+const NewsDetailsPage = async ({ params }: { params: { id: string } }): Promise<any> => {
     const news: News = await fetch(`https://news-api-next-js-one.vercel.app/api/news/${params.id}`).then((res) => res.json());
     // if (!news) {
     //     return <p>News In Not Found</p>;
