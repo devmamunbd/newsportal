@@ -2,7 +2,6 @@ export const revalidate = 60
 export const dynamicParams = true
 import { NewsItem } from "@/types/news";
 import Image from "next/image"
-import { JSX } from "react";
 
 
 export async function generateStaticParams() {
@@ -30,7 +29,7 @@ interface News {
     description: string;
 }
 
-const NewsDetailsPage = async ({ }: { params: { id: string } }) => {
+const NewsDetailsPage = async ({ params }: { params: { id: string } }) => {
     const news: News = await fetch(`https://news-api-next-js-one.vercel.app/api/news/${params.id}`).then((res) => res.json());
     // if (!news) {
     //     return <p>News In Not Found</p>;
