@@ -3,9 +3,7 @@ export const dynamicParams = true
 import { NewsItem } from "@/types/news";
 import Image from "next/image"
 import { JSX } from "react";
-interface PageProps {
-    params: { id: string };
-  }
+
 
 export async function generateStaticParams() {
     const data: NewsItem[] = await fetch('https://news-api-next-js-one.vercel.app/api/news').then((res) =>
@@ -32,7 +30,7 @@ interface News {
     description: string;
 }
 
-const NewsDetailsPage = async ({ params }: NewsDetailsPageProps): Promise<JSX.Element> => {
+const NewsDetailsPage = async ({ params }: NewsDetailsPageProps) => {
     const news: News = await fetch(`https://news-api-next-js-one.vercel.app/api/news/${params.id}`).then((res) => res.json());
     // if (!news) {
     //     return <p>News In Not Found</p>;

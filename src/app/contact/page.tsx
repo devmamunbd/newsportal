@@ -8,7 +8,7 @@ const page = () => {
       <div className="bg-blue-600 text-white dark:text-white dark:bg-gray-900 p-8 flex flex-col justify-center">
         <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
         <p className="text-lg text-gray-200">
-          We'd love to hear from you! Fill out the form and our team will get back to you soon.
+          Wed love to hear from you! Fill out the form and our team will get back to you soon.
         </p>
         <div className="mt-6 space-y-4">
           <p className="flex items-center">

@@ -18,7 +18,7 @@ const Banner = () => {
         <p className="text-xm text-gray-600">
         The Bangladesh National Cricket Team, known as the Tigers, represents Bangladesh in international cricket. The team is governed by the Bangladesh Cricket Board (BCB) and became a Full Member of the ICC in 2000, gaining Test status.
         <br></br>
-        Some of Bangladesh's legendary cricketers include Shakib Al Hasan, Mashrafe Mortaza, Tamim Iqbal, Mushfiqur Rahim, and Mahmudullah Riyad. The team plays its home matches at the Sher-e-Bangla National Stadium in Dhaka. Known for passionate cricket fans, Bangladesh continues to grow as a formidable force in world cricket.
+        Some of Bangladesh&apos; legendary cricketers include Shakib Al Hasan, Mashrafe Mortaza, Tamim Iqbal, Mushfiqur Rahim, and Mahmudullah Riyad. The team plays its home matches at the Sher-e-Bangla National Stadium in Dhaka. Known for passionate cricket fans, Bangladesh continues to grow as a formidable force in world cricket.
 
         </p>
              <Button className="dark:bg-gray-900 dark:text-white" variant="default">Read More....</Button>

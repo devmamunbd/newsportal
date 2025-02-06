@@ -9,7 +9,10 @@ import { Button } from "@/components/ui/button"
 import {usePathname} from "next/navigation"
 import { IoMdMenu, IoMdClose  } from "react-icons/io";
 import {ThemeContext} from '@/context/themeContext'
-
+interface ThemeContextType {
+    isDarkMode: boolean;
+    toggleTheme: () => void;
+  }
 const Navbar = () => {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +20,7 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen)
     }
 
-    const {isDarkMode, toggleTheme} : any = useContext(ThemeContext)
+    const {isDarkMode, toggleTheme} = useContext(ThemeContext) as ThemeContextType;
 
 
   return (
