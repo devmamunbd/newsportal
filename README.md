@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# News Portal Web App
 
-## Getting Started
+Welcome to the **News Portal Web App**, a modern news website built using **Next.js and TypeScript**.
 
-First, run the development server:
+## 🚀 Features
+- 📰 **Real-time News Updates** – Get the latest news instantly.
+- 🔍 **Search & Filter** – Easily find news based on categories or keywords.
+- 📱 **Responsive Design** – Works on all devices (mobile, tablet, desktop).
+- 🌎 **Multi-Category Support** – Covers politics, business, technology, sports, entertainment, and more.
+- 🏆 **User-Friendly UI** – Clean and modern interface for better readability.
+- ⚡ **Fast Performance** – Optimized for speed and SEO with Next.js.
 
+## 🛠️ Technologies Used
+- **Frontend:** TypeScript, Next.js, React, Tailwind CSS
+- **Backend:** Node.js, ExpressJS API Integration
+
+
+
+## 📥 Installation & Setup
+
+### 1️⃣ Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/devmamunbd/newsportal.git
+cd news-portal
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install Dependencies
+```bash
+yarn install   # or npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Run the Development Server
+```bash
+yarn dev   # or npm run dev
+```
+🔗 Open **http://localhost:3000/** in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌍 Deployment
+To deploy on **Vercel**, follow these steps:
+1. Push your code to GitHub.
+2. Go to [Vercel](https://vercel.com/) and import your repository.
+3. Click **Deploy** and get your live link!
 
-## Learn More
+## 📞 Contact
+For any queries or suggestions, feel free to reach out:
+- **Email:** contact@regularnews.com
+- **Website:** [yourwebsite.com](http://yourwebsite.com)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+✨ Happy Coding! 🚀
