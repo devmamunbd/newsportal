@@ -17,7 +17,7 @@ const categories = ['all', 'tech', 'health', 'sports', 'business']
 const CategoryFilter = ({onCategory}: CategoryProps) => {
   return (
     <div className="md:w-1/4">
-         <h3 className="text-xl text-black font-normal mb-2">Filter By Category</h3>
+         <h3 className="text-xl  font-normal mb-2">Filter By Category</h3>
          <Select
          onValueChange={(value)=> onCategory(value === 'all' ? "" : value)}
          >
@@ -27,7 +27,7 @@ const CategoryFilter = ({onCategory}: CategoryProps) => {
   <SelectContent>
     {
         categories?.map((category)=> (
-            <SelectItem value={category} className="capitalize">{category}</SelectItem>
+            <SelectItem key={category} value={category} className="capitalize">{category}</SelectItem>
         ))
     }
 

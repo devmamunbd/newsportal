@@ -10,7 +10,7 @@ interface SearchBarProps {
 const SearchBar = ({onSearch}: SearchBarProps) => {
   return (
     <div className="mb-4 md:w-3/4">
-     <h3 className="text-xl text-black font-normal mb-2">Search News</h3>
+     <h3 className="text-xl font-normal mb-2">Search News</h3>
      <Input
      type='text'
      onChange={(e)=> onSearch(e.target.value)}
